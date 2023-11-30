@@ -18,7 +18,6 @@ const updateContacts = async (contacts) => {
 export const listContacts = async () => {
   try {
     const data = await fs.readFile(contactsPath);
-    console.log(data);
     return JSON.parse(data);
   } catch (error) {
     console.log(error.message);
